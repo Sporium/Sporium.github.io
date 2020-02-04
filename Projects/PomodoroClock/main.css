@@ -1,0 +1,12 @@
+body {
+  background-image:url("https://klockit.files.wordpress.com/2015/07/time_will_tell-1457050.jpg");
+  background-size:100%;
+  background-attachment:fixed;
+  color:Blue;
+  }
+h2{
+  display:inline;
+}
+#start{
+  margin:10px;
+}

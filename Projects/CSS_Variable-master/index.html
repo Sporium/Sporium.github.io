@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JS30 CSS Variables Challenge</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+<script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+	<h2>Update CSS Variables with <span class='hl'>JS</span></h2>
+<div class="controls">
+  <label>Spacing:</label>
+  <input type="range" id="spacing" min="0" max="200" value="10" id="spacing" class="input" oninput="handleUpdate(this.value,'spacing')" onchange="handleUpdate(this.value, 'spacing')">
+	<!-- on change and intput send values and name to js  -->
+  <label>Blur:</label>
+  <input type="range" id="blur" min="0" max="25" value="10" class="test" oninput="handleUpdate(this.value,'blur')" onchange="handleUpdate(this.value, 'blur')">
+
+  <label>Base Color</label>
+  <input type="color" id="base" value="#ffc600" oninput="handleUpdate(this.value,'base')" onchange="handleUpdate(this.value, 'base')">
+</div>
+
+
+<img src="http://unsplash.it/800/500?imag=899">
+</body>
+</html>

@@ -50,7 +50,7 @@ nav {
 }
 
 .title_block h1 {
-	font-size: 30px;
+	font-size: 40px;
 	font-family: 'RalewayBold', sans-serif;
 	text-align: center;
 	color: #ffffff;
@@ -59,7 +59,7 @@ nav {
 }
 
 .title_block p {
-	font-size: 20px;
+	font-size: 25px;
 	text-align: center;
 	color: #f2f2f2;
 	letter-spacing: 5px;
@@ -126,6 +126,7 @@ header:after {
 }
 
 #aboutMe {
+	font-size: 25px;
 	padding-left: 40px;
 	padding-right: 40px;
 	padding-top: 160px;
@@ -213,7 +214,7 @@ header:after {
 .soc_btn_white {
 	font-size: 25px;
 	margin-top: 20px;
-	border: 1px solid #fff;
+	
 	border-radius: 5px;
 	color: #fff;
 	background-color: transparent;

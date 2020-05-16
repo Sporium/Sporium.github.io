@@ -76,7 +76,7 @@ nav {
 .classScroll {
 	/* background-color: #161616; */
 	animation-name: changeNav;
-	opacity: 0.8;
+	opacity: 1;
 	animation-duration: 2s;
 }
 .first_block {
@@ -85,7 +85,7 @@ nav {
 	position: fixed;
 	top: 0px;
 	height: 100vh;
-	background-image: url('../img/headerBack.jpg');
+	background-image: url('../img/headerBack.webp');
 	-webkit-background-size: cover;
 	background-size: cover;
 }
@@ -166,7 +166,6 @@ header:after {
 	text-transform: uppercase;
 }
 .skills {
-	margin-left: -25px;
 	text-align: center;
 }
 .skills_block {
@@ -214,7 +213,7 @@ header:after {
 .soc_btn_white {
 	font-size: 25px;
 	margin-top: 20px;
-	
+
 	border-radius: 5px;
 	color: #fff;
 	background-color: transparent;
@@ -595,7 +594,7 @@ body {
 	font-size: 0.9rem;
 	margin-bottom: var(--spacing-s);
 	text-transform: uppercase;
-	color: white
+	color: white;
 }
 
 .card__heading {
@@ -607,22 +606,22 @@ body {
 }
 
 /* @media (prefers-color-scheme: light) { */
-	.second_block {
-		background-color: #181818;
-		color: #eee;
-	}
-	.card {
-		/* border: 3px solid ; 
+.second_block {
+	background-color: #181818;
+	color: #eee;
+}
+.card {
+	/* border: 3px solid ; 
 		border-radius: 30px;
 		border-color: linear-gradient(to top, #008aff, #00ffe7);
 		animation: animate 5s linear infinite; */
 
-		border: solid 5px;
-		/* border-color: linear-gradient(to top, #db294f, #0aac9b); */
-		border-radius: 30px;
-		transition: outline 0.6s linear;
-		margin: 0.5em;
-	}
+	border: solid 5px;
+	/* border-color: linear-gradient(to top, #db294f, #0aac9b); */
+	border-radius: 30px;
+	transition: outline 0.6s linear;
+	margin: 0.5em;
+}
 /* } */
 /* 
 @media (prefers-color-scheme: light) {

@@ -630,3 +630,59 @@ body {
 		color: #000;
 	}
 } */
+
+/* FontAweasome used things */
+.fa,
+.fab,
+.fad,
+.fal,
+.far,
+.fas {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	display: inline-block;
+	font-style: normal;
+	font-variant: normal;
+	text-rendering: auto;
+	line-height: 1;
+}
+.fa-bars:before {
+	content: '\f0c9';
+}
+.fa-envelope:before {
+	content: '\f0e0';
+}
+.fa-facebook:before {
+	content: '\f09a';
+}
+.fa-github:before {
+	content: '\f09b';
+}
+.fa-telegram:before {
+	content: '\f2c6';
+}
+.fa-linkedin-square:before {
+	content: '\f08c';
+}
+.fa-linkedin:before {
+	content: '\f0e1';
+}
+. .fab {
+	font-family: 'Font Awesome 5 Brands';
+}
+.fab,
+.far {
+	font-weight: 400;
+}
+.fa,
+.far,
+.fas {
+	font-family: 'Font Awesome 5 Free';
+}
+
+.fa,
+.fas {
+	font-weight: 900;
+}
+
+/* font aweasome used end */

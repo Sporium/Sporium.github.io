@@ -60,20 +60,20 @@ video.addEventListener('play', () => {
 			y: resizedDetections[0].detection.box.bottomRight.y,
 		};
 		const center = {
-			x: resizedDetections[0].detection.box.bottomRight.x - 190,
-			y: resizedDetections[0].detection.box.bottomRight.y,
-		};
-
-		const centerBottom = {
-			x: resizedDetections[0].detection.box.bottomRight.x - 150,
+			x: resizedDetections[0].detection.box.bottomRight.x - 50,
 			y: resizedDetections[0].detection.box.bottomRight.y + 20,
 		};
+
+		// const centerBottom = {
+		// 	x: resizedDetections[0].detection.box.bottomRight.x - 150,
+		// 	y: resizedDetections[0].detection.box.bottomRight.y + 20,
+		// };
 		new faceapi.draw.DrawTextField(
 			[`${faceapi.round(interpolatedAge, 0)} years`],
 			bottomRight
 		).draw(canvas);
 		new faceapi.draw.DrawTextField(
-			[`${gender}(${genderProbability}) gender`],
+			[`${gender}(${genderProbability})`],
 			center
 		).draw(canvas);
 		// new faceapi.draw.DrawTextField(

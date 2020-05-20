@@ -1,12 +1,23 @@
 const video = document.getElementById('video');
 let predictedAges = [];
-
+// for localhost use path from base dir
+// like just /models or etc...
 Promise.all([
-	faceapi.nets.tinyFaceDetector.loadFromUri('/models'),
-	faceapi.nets.faceLandmark68Net.loadFromUri('/models'),
-	faceapi.nets.faceRecognitionNet.loadFromUri('/models'),
-	faceapi.nets.faceExpressionNet.loadFromUri('/models'),
-	faceapi.nets.ageGenderNet.loadFromUri('/models'),
+	faceapi.nets.tinyFaceDetector.loadFromUri(
+		'/Projects/face_recognition_on_JS/models/'
+	),
+	faceapi.nets.faceLandmark68Net.loadFromUri(
+		'/Projects/face_recognition_on_JS/models/'
+	),
+	faceapi.nets.faceRecognitionNet.loadFromUri(
+		'/Projects/face_recognition_on_JS/models/'
+	),
+	faceapi.nets.faceExpressionNet.loadFromUri(
+		'/Projects/face_recognition_on_JS/models/'
+	),
+	faceapi.nets.ageGenderNet.loadFromUri(
+		'/Projects/face_recognition_on_JS/models/'
+	),
 	console.log(faceapi),
 ]).then(startVideo);
 
@@ -61,7 +72,10 @@ video.addEventListener('play', () => {
 			[`${faceapi.round(interpolatedAge, 0)} years`],
 			bottomRight
 		).draw(canvas);
-		new faceapi.draw.DrawTextField([`${gender}(${genderProbability}) gender`], center).draw(canvas);
+		new faceapi.draw.DrawTextField(
+			[`${gender}(${genderProbability}) gender`],
+			center
+		).draw(canvas);
 		// new faceapi.draw.DrawTextField(
 		// 	[`${genderProbability} `],
 		// 	centerBottom
